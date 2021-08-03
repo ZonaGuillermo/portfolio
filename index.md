@@ -9,7 +9,7 @@
 <body>
 	<h1>Portfolio</h1>
 	<ul>
-		<li><a href="./works/01-Landing-Page/index.html">New Ideas web</a></li>
+		<li><a href="./works/01-Landing-Page/">New Ideas web</a></li>
 	</ul>
 </body>
 </html>
