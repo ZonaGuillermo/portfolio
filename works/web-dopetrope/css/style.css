@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+p {
+  color: #666;
+}
+
+/**********   HEADER NAV   **********/
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-link:hover {
+  border-radius: 3px;
+  background-color: red;
+  color: #fff !important;
+}
+
+.navbar-expand-sm .navbar-nav .dropdown-menu {
+  left: auto;
+}
+
+/**********   HOME   **********/
+.home .heading {
+  background-image: url("../img/pic01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 40vh;
+}
+.home .heading div {
+  width: 20rem;
+  padding: 2rem;
+  background-color: #333;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+}
+.home .heading div h1 {
+  font-size: 1rem;
+}
+.home .heading div p {
+  font-size: 0.6rem;
+  color: crimson;
+}
+
+/**********   CAPACITIES   **********/
+.capacities .col-12 {
+  display: flex;
+  justify-content: space-around;
+  align-items: inherit;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.capacities .col-12 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0.5rem;
+  padding-top: 1rem;
+  width: 250px;
+  border: 0;
+  text-align: center;
+}
+.capacities .col-12 .card .card-img-top {
+  width: 8rem;
+}
+.capacities .col-12 .card .card-text {
+  font-size: 0.8rem;
+}
+.capacities .col-12 .card:hover {
+  box-shadow: 0 0 10px 0 #666;
+}
+
+/**********   PORTFOLIO   **********/
+.portfolio, .blog {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+  flex-direction: row;
+}
+.portfolio .col-12 h2, .blog .col-12 h2 {
+  font-weight: 700;
+}
+.portfolio .works, .portfolio .post, .blog .works, .blog .post {
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+.portfolio .works .card, .portfolio .works .post, .portfolio .post .card, .portfolio .post .post, .blog .works .card, .blog .works .post, .blog .post .card, .blog .post .post {
+  width: 18rem;
+}
+.portfolio .works .card .card-body, .portfolio .works .card .post, .portfolio .works .post .card-body, .portfolio .works .post .post, .portfolio .post .card .card-body, .portfolio .post .card .post, .portfolio .post .post .card-body, .portfolio .post .post .post, .blog .works .card .card-body, .blog .works .card .post, .blog .works .post .card-body, .blog .works .post .post, .blog .post .card .card-body, .blog .post .card .post, .blog .post .post .card-body, .blog .post .post .post {
+  margin: 2rem 0 3rem;
+}
+.portfolio .works .card .card-body .card-text, .portfolio .works .card .card-body .post, .portfolio .works .card .post .card-text, .portfolio .works .card .post .post, .portfolio .works .post .card-body .card-text, .portfolio .works .post .card-body .post, .portfolio .works .post .post .card-text, .portfolio .works .post .post .post, .portfolio .post .card .card-body .card-text, .portfolio .post .card .card-body .post, .portfolio .post .card .post .card-text, .portfolio .post .card .post .post, .portfolio .post .post .card-body .card-text, .portfolio .post .post .card-body .post, .portfolio .post .post .post .card-text, .portfolio .post .post .post .post, .blog .works .card .card-body .card-text, .blog .works .card .card-body .post, .blog .works .card .post .card-text, .blog .works .card .post .post, .blog .works .post .card-body .card-text, .blog .works .post .card-body .post, .blog .works .post .post .card-text, .blog .works .post .post .post, .blog .post .card .card-body .card-text, .blog .post .card .card-body .post, .blog .post .card .post .card-text, .blog .post .card .post .post, .blog .post .post .card-body .card-text, .blog .post .post .card-body .post, .blog .post .post .post .card-text, .blog .post .post .post .post {
+  margin: 2rem 0 3rem;
+}
+
+/**********   BLOG   **********/
+.blog .post .card {
+  width: 25rem;
+}
+
+.foot {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+  flex-direction: row;
+  color: #fff;
+}
+.foot h3, .foot img, .foot a {
+  text-align: center;
+  margin: 2rem 0;
+}
+.foot .flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.foot .flex-center2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: "";
+  flex-direction: column;
+}
+.foot .flex-center2 div {
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+  flex-direction: row;
+}
+.foot .flex-center2 div a {
+  margin: 5px;
+}

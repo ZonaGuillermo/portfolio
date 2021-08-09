@@ -1,0 +1,399 @@
+*{
+	/* font-family: 'Oswald', sans-serif; */
+	font-family: 'Roboto', sans-serif;	
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth; 
+}
+
+:root{
+	--naranja: #ff8b00;
+	--fondo: #222;
+	--fondoCard: #333;
+	--textoH: #f1f1f1;
+	--texto: #888;
+	--fuenteH: 'Oswald', sans-serif;
+	--fuente: 'Roboto', sans-serif;
+	--p08: 0.8rem;
+}
+
+body{
+	background-color: #222;
+}
+
+header nav ul{
+	display: flex;
+	list-style: none;
+	margin:0;
+}
+
+header nav ul li{
+	margin: 0 10px;
+}
+
+.navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 5rem;
+	background-color: var(--fondo);
+	padding: 1rem 7rem;
+}
+
+.navbar-dark .navbar-brand{
+	color:var(--naranja);
+	font-size: 1rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	font-size: 0.9rem;
+	color: var(--texto);
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: var(--naranja);
+	text-decoration: none;
+}
+
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(136, 136, 136, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+  
+.custom-toggler.navbar-toggler {
+	border-color: rgb(136,136,136);
+} 
+
+.navbar-collapse{
+    background-color: var(--fondo);
+}
+
+.container{
+	padding: 0 3.5rem;
+}
+
+
+/**********   HOME   **********/
+
+section#home{
+	background-image: url("../img/hero_2.jpg");
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+section#home *{
+	color: #fff;
+	text-align: center;
+}
+
+section#home h1{
+	font-family: var(--fuenteH);
+	font-size: 4rem;
+}
+
+section#home button{
+	display: flex;
+	justify-content: center;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 2px;
+	margin-top: 30px;
+	padding: 5px 20px;
+	transition: background-color 0.3s, color 0.3s ease;
+}
+
+section#home button:hover{
+	background-color: var(--textoH);
+	color: var(--texto);
+}
+
+
+
+
+
+/**********   SERVICES   **********/
+
+section#services{
+	margin-bottom: 2rem;
+}
+
+section#services .col{
+	margin: 5rem 0 2rem;
+	text-align: center;
+}
+
+section#services .col h2{
+	font-family: var(--fuenteH);
+	color: var(--naranja);
+}
+
+section#services .col p{
+	margin: 0 auto;
+	width: 60%;
+	color:var(--texto);
+	font-size: var(--p08);
+}
+
+section#services .wrap{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+section#services .card{
+	background-color: transparent;
+	border: 0;
+	color: var(--textoH);
+	padding: 20px;
+}
+
+section .card span{
+	background-color: var(--fondoCard);
+	border-radius: 50%;
+	width: 40px;
+}
+
+
+section#performance .text li, section#mentor .text li{
+	list-style:url("../img/tik.svg");
+}
+
+section#services img{
+	position: relative;
+    top: 8px;
+    left: 10px;
+}
+
+section#services .card-body{
+	margin-top: 30px;
+	padding: 0;
+}
+
+section#services .card-title{
+	font-family: var(--fuenteH);
+	text-transform: uppercase;
+}
+
+section#services .card-text{
+	color: var(--texto);
+	font-size: var(--p08);
+}
+
+
+
+
+
+
+/**********   PERFORMANCE   **********/
+/**********   MENTOR   **********/
+
+section#mentor{
+	margin-bottom: 2rem;
+}
+
+section#performance .col-6,
+section#mentor .col-6 {
+	padding: 0;
+}
+
+section#performance img,
+section#mentor img{
+	width: 100%;
+}
+
+section#performance .text,
+section#mentor .text{
+	padding: 4rem 4rem 0;
+	color: var(--texto);
+}
+
+section#performance .text h3,
+section#mentor .text h3{
+	font-family: var(--fuenteH);
+	color:var(--naranja)
+}
+
+section#performance .text p,
+section#performance .text li,
+section#mentor .text p,
+section#mentor .text li{
+	font-size: var(--p08);
+	padding: 5px 0;
+}
+
+section#performance .text ul,
+section#mentor .text ul{
+	margin-left: 15px;
+	/* list-style: ; */
+}
+
+
+
+
+
+
+/**********   OUR TEAM   **********/
+
+section#team{
+	margin-bottom: 2rem;
+}
+
+section#team .col{
+	margin: 5rem 0 2rem;
+	text-align: center;
+}
+
+section#team .col h2{
+	font-family: var(--fuenteH);
+	color: var(--naranja);
+}
+
+section#team .col p{
+	margin: 0 auto;
+	width: 60%;
+	color:var(--texto);
+	font-size: var(--p08);
+}
+
+section#team .col-12{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+section#team .card{
+	display: flex;
+	align-items: center;
+	background-color: var(--fondoCard);
+	margin: 0.4rem;
+	padding: 1.5rem;
+	width: 18rem;
+}
+
+section#team .card .photoTeam{
+	border-radius: 50%;
+	width: 7rem;
+}
+
+section#team .card-body{
+	margin-top: 30px;
+	padding: 0;
+	text-align: center;
+}
+
+section#team .card-text{
+	font-size: var(--p08);
+	color: var(--texto);
+}
+
+section#team .card-title{
+	font-family: var(--fuenteH);
+	color: var(--naranja);
+	text-transform: uppercase;
+
+}
+
+section#team .social{
+	display: flex;
+	justify-content: center;
+}
+
+section#team .social a:hover{
+	filter: brightness(80%);
+	transition: filter 0.3s ease;
+}
+
+section#team .button{
+	background-color: var(--naranja);
+	display: flex;
+	justify-content: center;
+	border-radius: 3px;
+	margin: 2px;
+	width: 24px;
+	height: 24px;
+	align-items: center;
+}
+
+section#team .button img{
+	margin: 0;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+}
+
+
+
+
+
+
+/**********   CONTACT   **********/
+
+section#contact{
+	padding: 6rem 6rem 3rem;
+	font-size: var(--p08);
+}
+
+section#contact h3 {
+	margin: 2rem 0;
+	font-family: var(--fuenteH);
+	font-size: var(--p08);
+	color: var(--textoH);
+}
+
+section#contact p.blanco{
+	color: var(--textoH);
+	padding-right: 0.8rem;
+}
+
+section#contact ul{
+	list-style: none;
+	line-height: 2rem;
+	color:var(--texto);
+}
+
+section#contact li:hover{
+	color: var(--textoH);
+	cursor: pointer;
+	transition: color 0.3s ease;
+}
+
+section#contact .flex{
+	display: flex;
+	flex-direction: column;
+}
+
+section#concat button .naranja{
+	background-color: var(--naranja);
+	color:var(--textoH);
+}
+
+section#contact .button{
+	/* display: flex;
+	justify-content: center; */
+	display: inline-block;
+	width: 0.9rem;
+	margin-right: 20px;
+	filter: brightness(55%);
+}
+
+section#contact .button:hover{
+	filter: none;
+	transition: filter 0.3s ease;
+}

@@ -1,0 +1,162 @@
+@import './variables';
+@import './mixins';
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth; 
+}
+
+p{
+	color: $ctexto;
+}
+
+
+/**********   HEADER NAV   **********/
+
+.navbar-brand{
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.navbar{
+	@include flex(center, center, column);
+}
+
+.nav-link:hover{
+	border-radius: 3px;
+	background-color: red;
+	color: $cBlanco !important;	
+}
+
+.navbar-expand-sm .navbar-nav .dropdown-menu{
+	left: auto;
+}
+
+
+/**********   HOME   **********/
+.home{
+	.heading{
+	background-image: url('../img/pic01.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	@include flex(center, center);
+	height: 40vh;
+
+		div{
+			width: 20rem;
+			padding: 2rem;
+			background-color: #333;
+			border-radius: 3px;
+			text-align: center;
+			vertical-align: middle;
+			color: $cBlanco;
+
+			h1{
+				font-size: 1rem;
+			}
+
+			p{
+				font-size: 0.6rem;
+				color:crimson;
+			}
+		}
+	}
+}
+
+
+/**********   CAPACITIES   **********/
+.capacities .col-12{
+	@include flex(space-around);
+	flex-wrap: wrap;
+
+	.card{
+		@include flex(center, center, column);
+		margin: 2rem 0.5rem;
+		padding-top: 1rem;
+		width: 250px;
+		border: 0;
+		text-align: center;
+
+		.card-img-top{
+			width: 8rem;
+		}
+
+		.card-text{
+			font-size: $p08;
+		}
+	}
+
+	.card:hover{
+		box-shadow: 0 0 10px 0 $ctexto;
+	}
+}
+
+
+/**********   PORTFOLIO   **********/
+
+.portfolio, .blog{
+	background-color: #f7f7f7;
+	@include flex(center);
+
+	.col-12 h2{
+		font-weight: 700;
+	}
+
+	.works, .post{
+		@include flex(center);
+		margin: 1rem 0;
+
+		.card, .post{
+			width: 18rem;
+
+			.card-body, .post{
+				margin: 2rem 0 3rem;
+				
+				.card-text, .post{
+					margin: 2rem 0 3rem;
+				}
+			}
+		}
+	}
+}
+
+
+/**********   BLOG   **********/
+
+.blog .post .card{
+	width: 25rem;
+}
+
+.foot{
+	background-color: #000;
+	@include flex(center);
+	color: $cBlanco;
+
+	h3, img, a{
+		text-align: center;
+		margin:2rem 0;
+	}
+
+	.flex-center{
+		@include flex(center, center, column);
+	}
+	
+	.flex-center2{
+		@include flex(space-between,'',column);
+		
+		div{
+			@include flex(center);
+
+			a{
+				margin: 5px;
+			}
+		}
+	}
+
+
+}
