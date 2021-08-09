@@ -1,22 +1,8 @@
-<!--
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio Web</title>
-</head>
-<body>
-	<h1>Portfolio</h1>
-	<ul>
-		<li><a href="./works/01-Landing-Page/">New Ideas web</a></li>
-	</ul>
-</body>
-</html>
--->
-
 # Portfolio web
 
-- [New Ideas web](./works/01-Landing-Page/)
-- [POC Works](./works/03-POC-Works/)
+- [POC Works](./works/web-poc-works/)
+- [New Ideas web](./works/web-new-ideas/)
+- [Skater](./works/web-skater/)
+- [Design](./works/web-design/)
+- [Dopetrope](./works/web-dopetrope/)
+
