@@ -166,7 +166,7 @@ section#about{
     /* clip-path: polygon(0 10vw, 70% 0,100% 10vw, 100% 100%, 0 100%); */
     clip-path: polygon(0 10vw, 70% 0,100% 10vw, 100% calc(100% - 10vw), 0 100%);
     margin-top: -10vw;
-    padding: 14vw 0;
+    padding: 14vw 20px;
 }
 
 section#about div.flex div img{
@@ -201,6 +201,7 @@ section#portfolio{
 
 section#contact div.flex div{
     margin:0px 30px 30px;
+    width:400px;
 }
 
 section#contact div.flex div h2{
@@ -209,7 +210,6 @@ section#contact div.flex div h2{
 
 section#contact div.flex div form{
     margin:0 auto;
-    width:400px;
 }
 
 section#contact input, section#contact textarea {
