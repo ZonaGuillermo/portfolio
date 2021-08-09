@@ -158,6 +158,7 @@ section#home h1 span{
     justify-content:center;
     align-items:center;
     flex-wrap: wrap;
+    gap: 50px;
 }
 
 section#about{
@@ -174,7 +175,6 @@ section#about div.flex div img{
     clip-path:circle(145px);
     border:15px solid #fff;
     border-radius: 50%;
-    margin-right:50px
 }
 
 section#about div.flex div p{
