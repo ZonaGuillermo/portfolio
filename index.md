@@ -30,19 +30,19 @@ Another class practise with bootstrap using his own classes to make the design r
 ## Graphic design projects
 
 ### [Fans](./works/dg-abanicos-feria/abanicos-feria-2015.pdf)
-From 2009 to 2019 on the occasion of the September patron saint festivities of Cabra. CMYK offset printing on card stock with waves die. Dimensions 295x212mm.
+From 2009 to 2019 on the occasion of the September patron saint festivities of Cabra. Made with Corel Draw and Photoshop. CMYK offset printing on card stock with waves die. Dimensions 295x212mm.
 
 ### [Turistic guides](./works/dg-guia-turistica/guia-turistica-2016.pdf)
-From 2010 to 2019. Published and distributed during Holy Week. CMYK offset printing on glossy paper. Dimensions 420x297mm.
+From 2010 to 2019. Published and distributed during Holy Week. Made with Corel Draw and Photoshop.CMYK offset printing on glossy paper. Dimensions 420x297mm.
 
 ### [Christmas agendas](./works/dg-agenda-navidad/agenda-navidad-2014.pdf)
-From 2012 to 2015. CMYK offset printing on glossy paper. Dimensions 145x145mm.
+From 2012 to 2015. Made with Adobe Indesign and Photoshop. CMYK offset printing on glossy paper. Dimensions 145x145mm.
 
 ### [Calendars](./works/dg-calendario/calendario-2017.pdf)
-From 2015 to 2019. CMYK offset printing on glossy paper on cardboard support. Dimensions 220x145mm.
+From 2015 to 2019. Made with Adobe Indesign and Photoshop. CMYK offset printing on glossy paper on cardboard support. Dimensions 220x145mm.
 
 ### [Magnets](./works/dg-imanes/imanes-cabra-2018.pdf)
-In 2018. CMYK offset printing on magnetic foil. Dimensions 83x53mm.
+In 2018. Made with Photoshop. CMYK offset printing on magnetic foil. Dimensions 83x53mm.
 
 
 
