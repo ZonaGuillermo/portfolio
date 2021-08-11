@@ -1,8 +1,10 @@
 # Zona Guillermo's Work Portfolio
 
-Just a work portfolio with some examples and practices about my projects.
+Welcome to my work portfolio. A place with some examples and practices about my projects. If you like them, tell me.
 
-If you like them, tell me ^_^
+You can contact with me on [Twitter](@ZonaGuillermo) (@ZonaGuillermo) or by email at guillermomf@gmail.com.
+
+Enjoy ^_^
 
 
 
@@ -15,10 +17,10 @@ This web is responsive and it is made only with HTML, CSS and some vanilla Javas
 Realized with bootstrap to make this web responsive too. The icons used are SVG format so I have to colorize and sizing with his own properties inside the file in some cases.
 
 ### [POC Works](./works/web-poc-works/)
-The first objetive to this web is to learn about blend mode in CSS. This web is not responsive, but I used media queries to a better adapt the design.
+The first objetive of this web is to learn about blend mode in CSS. This web is not responsive, but I used media queries to a better desing adaptation.
 
 ### [Design](./works/web-design/)
-A little class practise. In this case I use bootstrap to make the design responsive, changing the number of columns according to the visor resolution. There are two methods to load the images. One using the <img> HTML element and the CSS object-fit property, and the oher using directly CSS brackground properties.
+A little class practise. In this case I use bootstrap to make the design responsive, changing the number of columns according to the visor resolution. There are two methods to load the images. One using the \<img\> HTML element and the CSS object-fit property, and the oher using directly CSS brackground properties.
 
 ### [Dopetrope](./works/web-dopetrope/)
 Another class practise with bootstrap using his own classes to make the design responsive. In this time, I also used some bootstrap components like cards.
@@ -27,11 +29,11 @@ Another class practise with bootstrap using his own classes to make the design r
 
 ## Graphic design projects
 
-### [Hand fans](./works/dg-abanicos-feria/abanicos-feria-2015.pdf)
+### [Fans](./works/dg-abanicos-feria/abanicos-feria-2015.pdf)
 From 2009 to 2019 on the occasion of the September patron saint festivities of Cabra. CMYK offset printing on card stock with waves die. Dimensions 295x212mm.
 
 ### [Turistic guides](./works/dg-guia-turistica/guia-turistica-2016.pdf)
-From 2010 to 2019. Published and distributed at Easter Week. CMYK offset printing on glossy paper. Dimensions 420x297mm.
+From 2010 to 2019. Published and distributed during Holy Week. CMYK offset printing on glossy paper. Dimensions 420x297mm.
 
 ### [Christmas agendas](./works/dg-agenda-navidad/agenda-navidad-2014.pdf)
 From 2012 to 2015. CMYK offset printing on glossy paper. Dimensions 145x145mm.
@@ -46,5 +48,18 @@ In 2018. CMYK offset printing on magnetic foil. Dimensions 83x53mm.
 
 ## Branding
 
-Coming soon... Please wait ^_^
+### [Librería Papelería El Paseo](./works/dg-ic-el-paseo/ic-el-paseo.pdf)
+This branding tries to explain the love for books and a job well done. There are some elements like logo, visit card, bookmark and sale posters.
 
+### [Eventia Publicidad](./works/dg-ic-eventia/ic-eventia.pdf)
+An advertising and merchandising agency. The client had the idea of a dragonfly which goes to the events and transform them.
+
+### [Cabra Recuerda](./works/dg-ic-cabra-recuerda/ic-cabra-recuerda.pdf)
+A little shop placed next to "La Villa", a neighborhood with medieval and romans origins. This brand have a classic style taking into account the environment.
+
+### [Grupo Ecoal](./works/dg-ic-grupo-ecoal/ic-grupo-ecoal.pdf)
+A clean and brilliance brand for a food and hygiene company.
+
+
+#  
+That's all folks!! ^_^
