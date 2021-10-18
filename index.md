@@ -10,6 +10,9 @@ Enjoy ^_^
 
 ## Web projects
 
+### [Travel Agency](./works/web-travel-agency/)
+Under construction!! This web is responsive and it is made with Bootstrap, HTML and CSS. Under construction!!
+
 ### [New Ideas](./works/web-new-ideas/)
 This web is responsive and it is made only with HTML, CSS and some vanilla Javascript (events and DOM) for the mobile menu. First section is thought to be shown on the whole visor view when you access it. In addition, I have used the CSS clip-path property to create divisors between sections and introduce the about section's image in a perfect circle. The menu icons have been introduced from Google Icon's web. 
 
