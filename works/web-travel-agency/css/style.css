@@ -260,12 +260,12 @@ h1, h2, h3, h4, h5, h6 {
 	border: 3px solid #fff;
 	width: 8rem;
 	height: 8rem;
+	object-fit: cover;
+	object-position: center;
 	box-shadow: 0 0 10px 3px #ccc;
 }
 
 .carousel-indicators {
-	/* bottom: -6rem; */
-	/* margin-top: 6rem !important; */
 	position: static;
 	margin-top: 3rem;
 }
