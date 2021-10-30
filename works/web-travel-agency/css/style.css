@@ -127,13 +127,13 @@ h1, h2, h3, h4, h5, h6 {
 /* *** SHAPE DIVIDER *** */
 .shape-divider {
 	position: relative;
-	padding-top: 15vw !important; /* Necesario para imponerme a Bootstrap */
+	padding-top: 25vh !important; /* Necesario para imponerme a Bootstrap */
 }
 
 .shape-divider:nth-child(2) {
 	/* Primer destination: Necesita espacios diferentes al ser el shape divider diferente */
 	padding-top: 18vw !important; /* Necesario para imponerme a Bootstrap */
-	padding-bottom: 15vw;
+	padding-bottom: 25vh;
 }
 
 
@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 	position: absolute;
 	top: -1px;  /* Necesario para evitar problemas de renderizado */
 	left: 0;
-	height: 15vw;
+	height: 25vh;
 	width: 100vw;
 }
 
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .shape-divider:last-child:before {
 	content:'';
-	height: 12vw;
+	height: 20vh;
 	clip-path: none;
 }
 
