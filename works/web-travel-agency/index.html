@@ -17,6 +17,7 @@
 	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 	<!-- STYLE SHEET -->
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 	<!-- CABECERA -->
@@ -67,25 +68,31 @@
 				</ul>
 			</div>
 
-			<!-- BARRA PRINCIPAL -->
+			<!-- BARRA MENU PRINCIPAL -->
 			<div class="col-12 d-flex justify-content-between p-4 align-items-center">
 				<div>
 					<a href="" class="text-decoration-none"><h2 class="logo">Destinia</h2></a>
 				</div>
 				
-				<ul class="menu list-unstyled text-center d-flex align-items-center m-0">
-					<li><a href="" class="mx-3">Inicio</a></li>
-					<li><a href="" class="mx-3">Empresa</a></li>
-					<li><a href="" class="mx-3">Destinos</a></li>
-					<li><a href="" class="mx-3">Contacto</a></li>
-				</ul>
-				<button class="subscribe" title="Suscribase a nuestro boletín de noticias">Suscribase</button>
+				<nav>
+					<ul class="menu list-unstyled text-center d-none d-md-flex align-items-center m-0">
+						<li><a href="" class="closeMobileMenu mx-3 d-none"><i class="bi bi-x-lg"></i></a></li>
+						<li><a href="" class="mx-3">Inicio</a></li>
+						<li><a href="" class="mx-3">Empresa</a></li>
+						<li><a href="" class="mx-3">Destinos</a></li>
+						<li><a href="" class="mx-3">Contacto</a></li>
+					</ul>
+				</nav>
+				<button class="subscribe d-none d-md-flex " title="Suscribase a nuestro boletín de noticias">Suscribase</button>
+				<button class="hamburger rounded-circle d-flex align-items-center d-md-none">
+					<i class="bi bi-list fs-3"></i>
+				</button>
 			</div>
 		<!-- </div> -->
 		
 		<!-- HERO -->
 		<div class="hero col-12 bg-light">
-			<div class="row">
+			<div class="row m-0">
 				<div class="hero-left col-12 col-md-5 m-0 ps-5 ps-lg-5 d-flex align-items-center bg-warning">
 					<h1 class="m-0">Experiencias sin limite</h1>
 				</div>
@@ -314,7 +321,8 @@
 
 
 
-
+	<!-- JAVASCRIPT -->
+	<script src="./js/main.js"></script>
 	<!-- BOOTSTRAP JAVASCRIPT -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" 
 	integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
