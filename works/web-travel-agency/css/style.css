@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 	top: -1px;  /* Necesario para evitar problemas de renderizado */
 	left: 0;
 	height: 15vw;
-	width: 100vw;
+	width: 100%;
 }
 
 /* DIVISOR IMPAR*/
