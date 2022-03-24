@@ -78,8 +78,8 @@ header li.btn{
     transition:0.3s;
 }
 
-.menu ul li.cerrarMenuMovil,
-header li.btn{
+.cerrarMenuMovil,
+.btn{
     display: none;
 }
 
