@@ -72,14 +72,14 @@ header button{
 }
 
 header button:hover,
-header li.btn{
+header li.showSubscribeModalMobile{
     background: #0baa2d;
     cursor: pointer;
     transition:0.3s;
 }
 
-.cerrarMenuMovil,
-.btn{
+.closeMobileMenu,
+.showSubscribeModalMobile{
     display: none;
 }
 
@@ -94,11 +94,13 @@ header button:last-child{
 		display: none;
 	}
 
-    header button:last-child{
+    header button:last-child,
+    .closeMobileMenu,
+    .showSubscribeModalMobile {
 		display: inherit;
 	}
 
-    header nav.menuMovil{
+    header nav.mobileMenu{
         display: flex;
         justify-content: center;
         position: absolute;
@@ -108,20 +110,16 @@ header button:last-child{
         text-align: center;
     }
 
-    header nav.menuMovil ul{
+    header nav.mobileMenu ul{
         display: block;
         width: 100%;
         padding: 0;
     }
 
-    header nav.menuMovil ul a{
+    header nav.mobileMenu ul a{
         display: block;
         padding: 20px;
     }
-
-    /* header nav.menuMovil ul li.hidden {
-        display:inherit;
-    } */
 
     header nav.menu ul li:hover {
         transform:none;
@@ -130,18 +128,25 @@ header button:last-child{
 }
 
 
+
 /* HOME */
 
 section#home{
-    background-color: wheat;
-    background-image: url("../img/home_background_06.jpg");
+    background-color: #615173;
+    background-image: url("../assets/home_background_06.jpg");
+    background-position: center;
     background-size: cover;
     height: calc(100vh + 10vw);
     margin-top:-70px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section#home h1 {
-    padding: 120px 0;
+    margin-top: -15rem;
+    /* width: 100%; */
+    /* padding: 120px 0; */
     font-size: 120px;
     font-weight: 700;
     color: #fff;
@@ -154,6 +159,8 @@ section#home h1 {
 section#home h1 span{
     font-size: 40px;
 }
+
+
 
 /* ABOUT */
 
@@ -185,20 +192,6 @@ section#about div.flex div p{
     margin-bottom:10px;
 }
 
-
-
-
-/* PORTFOLIO 
-
-section#portfolio{
-    background-color:mediumaquamarine;
-    width: 100%;
-    min-height: 1000px;
-    clip-path: polygon(0 10vw, 100% 0, 100% calc(100% - 10vw), 0 100%);
-    margin: -10vw 0;
-    padding: 14vw 0;
-}
-*/
 
 
 /* CONTACT */
@@ -265,6 +258,8 @@ section#contact input[type=submit]:hover{
     transition:0.3s;
 }
 
+
+
 /* FOOTER */
 
 footer{
@@ -279,11 +274,12 @@ footer .social {
 footer div.social ul {
     display:flex;
     justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
 }
 
 footer div.social ul li{
         list-style: none;
-        padding-left:50px;
         margin:30px 0 20px;
 }
 
@@ -292,13 +288,124 @@ footer div.social ul li:hover{
     transition: 0.3s;
 }
 
-footer div.social ul li:first-child{
-    padding:0;
-}
-
 footer p.bottomBar{
     background:#222;
     color:#fff;
     text-align:center;
     padding:15px;
+}
+
+
+/* SUBSCRIBE MODAL DIALOG */
+
+dialog#subscribe-modal {
+    position: fixed;
+    top: 50dvb;
+    bottom: 50dvb;
+    margin: auto;
+    padding: 2rem;
+    width: 50dvi;
+    border: 4px solid #0cc233;
+    border-radius: 8px;
+    filter: drop-shadow(0px 0px 100px hsl(0, 0%, 50%));
+}
+
+dialog#subscribe-modal[open] {
+    animation: OpacityIn 0.3s forwards;
+}
+
+dialog#subscribe-modal[open]::backdrop {
+    animation: fadeIn 0.3s forwards;
+}
+
+dialog#subscribe-modal .btnCloseModal {
+    border: 0;
+    background-color: #0cc233;
+    color: #fff;
+    width: 4rem;
+    height: 2.5rem;
+    padding: 4px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0rem;
+}
+
+dialog#subscribe-modal .btnCloseModal:hover {
+    filter: brightness(.9);
+}
+
+dialog#subscribe-modal form {
+    margin-top: 2rem;
+}
+
+dialog#subscribe-modal form label[for="subscribe-email"] {
+    display: none;
+}
+
+dialog#subscribe-modal form input[type="email"] {
+    padding: 10px;
+    outline: 1px solid #ccc;
+    border: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    max-width: 50%;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    dialog#subscribe-modal form input[type="email"] {
+        margin-bottom: 1rem;
+        min-width: 100%;
+    }
+
+    dialog#subscribe-modal form input[type="button"] { 
+        min-width: 100%;
+    }
+}
+
+dialog#subscribe-modal form input[type="email"]:focus {
+    border: 0;
+    outline: #0baa2d solid 2px;
+}
+
+dialog#subscribe-modal form input[type="button"] {
+    margin: 0;
+    margin-left: -3px;
+    padding: 10px;
+    outline: #0cc233 solid 1px;
+    border: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #0cc233;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+dialog#subscribe-modal form input[type="button"]:hover {
+    background: #0baa2d;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        backdrop-filter: blur(0px);
+    }
+    to {
+        backdrop-filter: blur(5px);
+    }
+}
+
+@keyframes OpacityIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

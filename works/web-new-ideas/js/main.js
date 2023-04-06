@@ -1,17 +1,36 @@
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
-const cerrarMenuMovil = document.querySelector('.cerrarMenuMovil');
-const btn = document.querySelector('.btn');
+const menuItemArr = document.querySelectorAll('#showMobileMenu ul li a');
+
+const showSubscribeModalArr = document.querySelectorAll('.showSubscribeModal')
+const subscribeModal = document.getElementById('subscribe-modal');
+const btnCloseModal = document.querySelector('.btnCloseModal')
+
+
+// MOBILE MENU
 
 hamburger.addEventListener('click', () => {
-	menu.classList.add('menuMovil');
-	cerrarMenuMovil.style.display = 'inherit';
-	btn.style.display = 'inherit';
+	menu.classList.add('mobileMenu');
+});
+
+menuItemArr.forEach(item => {
+	item.addEventListener('click', () => {
+		menu.classList.remove('mobileMenu');
+	})
+});
+
+
+
+// SUBSCRIBE MODAL
+
+showSubscribeModalArr.forEach(btn => {
+	btn.addEventListener('click', () => {
+		document.body.style.overflow = "hidden";
+		subscribeModal.showModal();
+	})
 })
 
-cerrarMenuMovil.addEventListener('click', () => {
-	menu.classList.remove('menuMovil');
-	menu.classList.add('menu');
-	cerrarMenuMovil.style.display = 'none';
-	btn.style.display = 'none';
+btnCloseModal.addEventListener('click', () => {
+	document.body.style.overflow = "initial";
+	subscribeModal.close();
 })

@@ -1,35 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HTML Meta Tags -->
     <title>New Ideas For Other Times</title>
+    <link rel="shortcut icon" href="./assets/Icon-ZonaGuillermo.png" type="image/png">
+    <meta name="description" content="UI Design & Mockup for a generic responsive web with Advanced CSS Styles">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://zonaguillermo.github.io/ui-design/new-ideas/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="New Ideas For Other Times">
+    <meta property="og:description" content="UI Design & Mockup for a generic responsive web with Advanced CSS Styles">
+    <meta property="og:image"
+        content="https://zonaguillermo.github.io/ui-design/new-ideas/assets/opengraph-image.jpg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="zonaguillermo.github.io">
+    <meta property="twitter:url" content="hhttps://zonaguillermo.github.io/ui-design/new-ideas/">
+    <meta name="twitter:title" content="New Ideas For Other Times">
+    <meta name="twitter:description" content="UI Design & Mockup for a generic responsive web with Advanced CSS Styles">
+    <meta name="twitter:image"
+        content="https://zonaguillermo.github.io/ui-design/new-ideas/assets/opengraph-image.jpg">
+
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+
 	<!-- GOOGLE ICONS -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <main> 
         <!-- HEADER - NAVIGATION -->
         <header>
-            <img src="img/Logo-ZonaGuillermo.png" alt="Zona Guillermo Logo" id="logo">
-            <nav class="menu" id="mostrarMenuMovil">
+            <img src="./assets/Logo-ZonaGuillermo.png" alt="Zona Guillermo Logo" id="logo">
+            <nav class="menu" id="showMobileMenu">
                 <ul>
-                    <li class="cerrarMenuMovil">
+                    <li class="closeMobileMenu">
                         <a><span class="material-icons">cancel</span></a>
                     </li>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li class="btn"><a href="#">Susbcribe</a></li>
+                    <li class="showSubscribeModal showSubscribeModalMobile"><a>Susbcribe</a></li>
                 </ul>
             </nav>
-            <button>Susbcribe</button>
+            <button class="showSubscribeModal">Subscribe</button>
             <button class="hamburger">
                 <span class="material-icons">menu</span>
             </button>
@@ -44,7 +68,7 @@
         <section id="about">
             <div class="flex">
                 <div>
-                    <img src="img/about_02.jpg" alt="It's me?">
+                    <img src="./assets/about_02.jpg" alt="It's me?">
                 </div>
                 <div>
                     <h2>About me</h2>
@@ -70,21 +94,31 @@
                         Cupiditate aut velit suscipit nulla!</p>
                 </div>
                 <div>
-                    <form action="#" method="get">
+                    <form>
                         <label for="name">Name<span>*</span></label>
-                        <input type="text" name="name" id="name" placeholder="Your name" maxlength="50" required>
-                        <label for="url">Web site<span>*</span></label>
-                        <input type="url" name="url" id="url" placeholder="www.yoursite.com" maxlength="20" required>
+                        <input type="text" name="name" id="name" placeholder="Your name" maxlength="50" spellcheck required>
+
+                        <label for="url">Email<span>*</span></label>
+                        <input type="email" name="email" id="email" placeholder="your@email.com" maxlength="80" spellcheck required>
+
+                        <label for="url">Web site</label>
+                        <input type="url" name="url" id="url" placeholder="http://www.yoursite.com" maxlength="20" title="La URL debe empezar con 'http://' obligatoriamente">
+
                         <textarea name="memo" id="memo" cols="30" rows="10" placeholder="Your comments here" required></textarea>
+
                         <label for="checkbox">Accept the <a href="#">terms</a> to send</label>
                         <input type="checkbox" name="checkbox" id="checkbox" required>
+
                         <input type="submit" value="Send">
                     </form>
                 </div>
             </div> <!-- FIN div.flex -->
 
             <!-- MAP -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12138.062008985662!2d-3.6609772!3d40.4859824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7af80db16f3aa5a!2sCodeHouse%20Academy!5e0!3m2!1ses!2ses!4v1617450336636!5m2!1ses!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1529.661009284436!2d-4.780886000853534!3d37.88445502164316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf632c14fe9b%3A0x152aec9c6cf9327d!2sPlaza%20de%20las%20Tendillas!5e0!3m2!1ses!2ses!4v1680171294943!5m2!1ses!2ses"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
@@ -92,13 +126,25 @@
     <footer>
         <div class="social">
             <ul>
-                <li><a href="#"><img src="img/twitter_logo.svg" alt="Twitter"></a></li>
-                <li><a href="#"><img src="img/linkedin_logo.svg" alt="LindedIn"></a></li>
-                <li><a href="#"><img src="img/facebook_logo.svg" alt="Facebook"></a></li>
+                <li><a href="https://github.com/ZonaGuillermo" target="_blank" title="Visit my GitHub profile"><img src="./assets/github_logo.svg" alt="GitHub"></a></li>
+                <li><a href="https://www.linkedin.com/in/guillermomf/" target="_blank" title="Contact me by LinkedIn"><img src="./assets/linkedin_logo.svg" alt="LindedIn"></a></li>
+                <li><a href="https://twitter.com/ZonaGuillermo6" target="_blank" title="Follow me on Twitter"><img src="./assets/twitter_logo.svg" alt="Twitter"></a></li>
             </ul>
         </div>
         <p class="bottomBar">Made with ❤ by Zona Guillermo</p>
     </footer>
+
+    <!-- SUBSCRIBE MODAL DIALOG -->
+    <dialog id="subscribe-modal">
+        <button class="btnCloseModal">X</button>
+        <h1>Subscribe to my newsletter</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptas soluta mollitia, modi velit alias voluptate at maiores. Necessitatibus repellat doloremque doloribus obcaecati odio impedit quasi illum nulla harum totam!</p>
+        <form method="dialog">
+            <label for="subscribe-email">Email</label>
+            <input type="email" name="subscribe-email" id="subscribe-email" placeholder="your@email">
+            <input type="button" value="Subscribe">
+        </form>
+    </dialog>
 
 	<!-- JAVASCRIPT -->
 	<script src="./js/main.js"></script>
